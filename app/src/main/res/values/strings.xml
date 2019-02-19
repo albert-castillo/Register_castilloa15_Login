@@ -1,0 +1,22 @@
+<resources>
+    <string name="welcome">Welcome!</string>
+    <string name="app_name">Register_castilloa15_Login</string>
+    <string name="request1">Please enter your Registration Info:</string>
+    <string name="request2">Please enter your Registration Info to Log In:</string>
+    <string name="first">Enter your First Name:</string>
+    <string name="last">Enter your Last Name:</string>
+    <string name="dob">Enter your Date of Birth:</string>
+    <string name="email1">Enter your Email:</string>
+    <string name="pass">Enter your Password:</string>
+    <string name="home1">Please Register if this is your first time</string>
+    <string name="home2">Please Log In if you already Registered</string>
+    <string name="reg">Register</string>
+    <string name="log">Log In</string>
+    <string name="password">Password</string>
+    <string name="email2">bob@gmail.com</string>
+    <string name="date">MMDDYYYY</string>
+    <string name="firstn">enter first name</string>
+    <string name="lastn">enter last name</string>
+    <string name="suc">"Successful Log In:"</string>
+
+</resources>

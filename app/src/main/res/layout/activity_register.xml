@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:id="@+id/gpamain"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    //Top message asking for info
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/request1"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    //message asking for first name
+    <TextView
+        android:id="@+id/gpa1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.06" />
+
+    //message asking for last name
+    <TextView
+        android:id="@+id/gpa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gpa1"
+        app:layout_constraintVertical_bias="0.05" />
+
+    //message asking for date of birth
+    <TextView
+        android:id="@+id/gpa3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dob"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gpa2"
+        app:layout_constraintVertical_bias="0.049" />
+
+    //message asking for email
+    <TextView
+        android:id="@+id/gpa4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email1"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gpa3"
+        app:layout_constraintVertical_bias="0.058" />
+
+    //message asking for password
+    <TextView
+        android:id="@+id/gpa5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pass"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gpa4"
+        app:layout_constraintVertical_bias="0.05" />
+
+    //declares button which ones clicked moves user back to the home screen
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="600dp"
+        android:enabled="false"
+        android:onClick="goHome"
+        android:text="@string/reg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gpa5"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    //captures the user's first name
+    <EditText
+        android:id="@+id/firstinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="8dp"
+        android:ems="7"
+        android:hint="@string/firstn"
+        android:maxLength="30"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="@+id/gpa1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    //captures the user's last name
+    <EditText
+        android:id="@+id/lastinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="4dp"
+        android:ems="7"
+        android:hint="@string/lastn"
+        android:maxLength="30"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="@+id/gpa2"
+        app:layout_constraintTop_toBottomOf="@+id/gpa1" />
+
+    //captures the user's date of birth
+    <EditText
+        android:id="@+id/birthinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="224dp"
+        android:ems="6"
+        android:hint="@string/date"
+        android:inputType="date"
+        app:layout_constraintLeft_toLeftOf="@+id/gpa3"
+        app:layout_constraintTop_toBottomOf="@+id/gpa2" />
+
+    //captures the user's email
+    <EditText
+        android:id="@+id/emailinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="224dp"
+        android:ems="7"
+        android:hint="@string/email2"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toLeftOf="@+id/gpa4"
+        app:layout_constraintTop_toBottomOf="@+id/gpa3" />
+
+    //captures the user's password
+    <EditText
+        android:id="@+id/passinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="224dp"
+        android:ems="6"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="@+id/gpa5"
+        app:layout_constraintTop_toBottomOf="@+id/gpa4" />
+
+</android.support.constraint.ConstraintLayout>
+    </ScrollView>
